@@ -1,0 +1,29 @@
+name: CustomGear
+version: 1.1.0
+main: me.customgear.CustomGear
+api-version: '1.20'
+description: Rename tools, change armor trims, and save custom kits.
+
+commands:
+  rename:
+    description: Rename the item in your hand (supports & color codes).
+    usage: /rename <name>
+    permission: customgear.rename
+  trim:
+    description: Change the trim on your armor.
+    usage: /trim <pattern> <material> [hand|all]
+    permission: customgear.trim
+  kit:
+    description: Get, list, save or delete kits.
+    usage: /kit [list|<name>|save <name>|delete <name>]
+
+permissions:
+  customgear.rename:
+    default: true
+  customgear.trim:
+    default: true
+  customgear.kit.use:
+    default: true
+  customgear.kit.admin:
+    description: Create and delete kits.
+    default: op

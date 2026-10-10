@@ -1,0 +1,5 @@
+# false = /kit adds items to your inventory (armor only goes in empty armor slots,
+#         anything that doesn't fit drops at your feet). Safe for survival.
+# true  = /kit replaces your whole inventory with the exact saved layout,
+#         like a PvP kit. Whatever you were carrying is wiped.
+replace-inventory: false
